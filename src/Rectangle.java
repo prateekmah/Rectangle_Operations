@@ -1,5 +1,4 @@
-public class Rectangle {
-
+public class Rectangle implements Shape{
     private double length;
     private double breadth;
 
@@ -12,10 +11,16 @@ public class Rectangle {
         this.breadth=breadth;
     }
 
+    @Override
     public double calculateArea()
     {
 
       return length*breadth;
+    }
+@Override
+    public double calculatePerimeter()
+    {
+        return 2*(length+breadth);
     }
 
 }
