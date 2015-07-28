@@ -1,27 +1,18 @@
-/**
- * Created by LENOVO on 7/28/15.
- */
 public class Rectangle {
 
-    private int length;
-    private int breadth;
+    private double length;
+    private double breadth;
 
-    public int getLength() {
-        return length;
-    }
 
-    public int getBreadth() {
-        return breadth;
-    }
 
-    public Rectangle(int length,int breadth)
+    public Rectangle(double length,double breadth)
     {
         this.length=length;
 
         this.breadth=breadth;
     }
 
-    public int calculateArea()
+    public double calculateArea()
     {
 
       return length*breadth;
